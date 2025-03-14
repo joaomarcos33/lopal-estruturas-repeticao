@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let totalDePessoas = prompt("insira o numero de pessoas");
+        let somaDasIdades = 0;
+
+        for(let numero = 1; numero <= totalDePessoas; numero++){
+            let idade = parseInt(prompt("insira a idade da pessoa número " + numero + "." ));
+             console.log(typeof(idade));                  
+            somaDasIdades = somaDasIdades+idade;
+        }
+            let media = somaDasIdades / totalDePessoas;
+            if(isNaN(media)){
+                document.write("Ops! hoive um probleminha.")
+            }else{    
+             
+                document.write("a média de idade das pessoas é:" + media);
+            }
+            
+        
+
+    </script>
+</body>
+</html>
